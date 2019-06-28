@@ -22,7 +22,7 @@ import android.support.annotation.NonNull;
 import com.yuliu.base.delegate.AppLifecycles;
 
 import butterknife.ButterKnife;
-import me.jessyan.mvparms.demo.BuildConfig;
+import me.yuliu.mvp.demo.BuildConfig;
 import timber.log.Timber;
 
 /**

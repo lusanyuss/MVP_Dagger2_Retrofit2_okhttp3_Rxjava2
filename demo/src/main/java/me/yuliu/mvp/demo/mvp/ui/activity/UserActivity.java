@@ -33,8 +33,8 @@ import com.tbruyelle.rxpermissions2.RxPermissions;
 import javax.inject.Inject;
 
 import butterknife.BindView;
-import me.jessyan.mvparms.demo.R;
-import me.jessyan.mvparms.demo.di.component.DaggerUserComponent;
+import me.yuliu.mvp.demo.R;
+import me.yuliu.mvp.demo.di.component.DaggerUserComponent;
 import me.yuliu.mvp.demo.mvp.contract.UserContract;
 import me.yuliu.mvp.demo.mvp.presenter.UserPresenter;
 import timber.log.Timber;

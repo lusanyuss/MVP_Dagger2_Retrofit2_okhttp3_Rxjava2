@@ -23,7 +23,7 @@ import com.yuliu.base.DefaultAdapter;
 
 import java.util.List;
 
-import me.jessyan.mvparms.demo.R;
+import me.yuliu.mvp.demo.R;
 import me.yuliu.mvp.demo.mvp.model.entity.User;
 import me.yuliu.mvp.demo.mvp.ui.holder.UserItemHolder;
 

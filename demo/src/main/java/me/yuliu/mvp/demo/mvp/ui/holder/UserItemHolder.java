@@ -27,7 +27,7 @@ import com.yuliu.imageloader.glide.ImageConfigImpl;
 import com.yuliu.utils.ArmsUtils;
 
 import butterknife.BindView;
-import me.jessyan.mvparms.demo.R;
+import me.yuliu.mvp.demo.R;
 import me.yuliu.mvp.demo.mvp.model.entity.User;
 
 /**

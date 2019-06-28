@@ -29,7 +29,7 @@ import com.yuliu.integration.ConfigModule;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import me.jessyan.mvparms.demo.BuildConfig;
+import me.yuliu.mvp.demo.BuildConfig;
 import me.yuliu.mvp.demo.mvp.model.api.Api;
 import me.jessyan.progressmanager.ProgressManager;
 import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
