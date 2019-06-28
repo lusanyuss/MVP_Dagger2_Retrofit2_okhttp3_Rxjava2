@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.yuliu.http.imageloader.glide;
+package com.yuliu.imageloader.glide;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -29,6 +29,10 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.yuliu.di.module.GlobalConfigModule;
 import com.yuliu.http.imageloader.BaseImageLoaderStrategy;
 import com.yuliu.http.imageloader.ImageConfig;
+import com.yuliu.http.imageloader.glide.GlideAppliesOptions;
+import com.yuliu.http.imageloader.glide.GlideArms;
+import com.yuliu.http.imageloader.glide.GlideRequest;
+import com.yuliu.http.imageloader.glide.GlideRequests;
 import com.yuliu.utils.Preconditions;
 
 import io.reactivex.Completable;

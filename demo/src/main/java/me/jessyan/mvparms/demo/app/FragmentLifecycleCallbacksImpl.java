@@ -20,9 +20,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
-import com.yuliu.integration.cache.IntelligentCache;
-import com.yuliu.utils.ArmsUtils;
-import com.squareup.leakcanary.RefWatcher;
+
 import timber.log.Timber;
 
 /**
@@ -30,7 +28,7 @@ import timber.log.Timber;
  * 展示 { FragmentManager.FragmentLifecycleCallbacks} 的用法
  * ================================================
  */
-public class FragmentLifecycleCallbacksImpl extends FragmentManager.FragmentLifecycleCallbacks{
+public class FragmentLifecycleCallbacksImpl extends FragmentManager.FragmentLifecycleCallbacks {
 
     @Override
     public void onFragmentAttached(FragmentManager fm, Fragment f, Context context) {
@@ -90,11 +88,6 @@ public class FragmentLifecycleCallbacksImpl extends FragmentManager.FragmentLife
     @Override
     public void onFragmentDestroyed(FragmentManager fm, Fragment f) {
         Timber.i(f.toString() + " - onFragmentDestroyed");
-        ((RefWatcher) ArmsUtils
-                .obtainAppComponentFromContext(f.getActivity())
-                .extras()
-                .get(IntelligentCache.getKeyOfKeep(RefWatcher.class.getName())))
-                .watch(f);
     }
 
     @Override

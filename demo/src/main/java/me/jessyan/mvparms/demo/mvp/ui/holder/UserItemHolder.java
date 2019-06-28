@@ -16,16 +16,14 @@
 package me.jessyan.mvparms.demo.mvp.ui.holder;
 
 import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.yuliu.base.BaseHolder;
-import com.yuliu.base.DefaultAdapter;
 import com.yuliu.di.component.AppComponent;
 import com.yuliu.http.imageloader.ImageLoader;
-import com.yuliu.http.imageloader.glide.ImageConfigImpl;
+import com.yuliu.imageloader.glide.ImageConfigImpl;
 import com.yuliu.utils.ArmsUtils;
 
 import butterknife.BindView;
@@ -42,12 +40,12 @@ public class UserItemHolder extends BaseHolder<User> {
     @BindView(R.id.iv_avatar)
     ImageView mAvatar;
     @BindView(R.id.tv_name)
-    TextView mName;
+    TextView  mName;
     private AppComponent mAppComponent;
     /**
      * 用于加载图片的管理类, 默认使用 Glide, 使用策略模式, 可替换框架
      */
-    private ImageLoader mImageLoader;
+    private ImageLoader  mImageLoader;
 
     public UserItemHolder(View itemView) {
         super(itemView);

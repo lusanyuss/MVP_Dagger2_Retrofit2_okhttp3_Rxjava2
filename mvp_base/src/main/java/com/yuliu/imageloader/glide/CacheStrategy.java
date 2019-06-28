@@ -1,4 +1,4 @@
-package com.yuliu.http.imageloader.glide;
+package com.yuliu.imageloader.glide;
 
 import android.support.annotation.IntDef;
 
